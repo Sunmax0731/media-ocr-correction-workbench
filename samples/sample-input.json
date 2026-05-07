@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "media-ocr-correction-workbench",
+    "title": "音声・動画・OCR修正ワークベンチ"
+  },
+  "items": [
+    {
+      "id": "media-ocr-correction-workbench-happy",
+      "title": "音声・動画・OCR修正ワークベンチ happy",
+      "status": "ready",
+      "tags": [
+        "webapp"
+      ],
+      "mediaPath": "samples/happy.mp4",
+      "ocrText": "sample OCR text",
+      "correctedText": "corrected sample text",
+      "owner": "closed-alpha",
+      "confidenceNote": "音声・動画・OCR修正ワークベンチ の確認観点"
+    }
+  ]
+}
