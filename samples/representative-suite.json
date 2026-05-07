@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "音声・動画・OCR修正ワークベンチ の正常入力を検証する",
+    "items": [
+      {
+        "id": "media-ocr-correction-workbench-happy",
+        "title": "音声・動画・OCR修正ワークベンチ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/happy.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha",
+        "confidenceNote": "音声・動画・OCR修正ワークベンチ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "media-ocr-correction-workbench-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/missing.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha",
+        "confidenceNote": "音声・動画・OCR修正ワークベンチ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "media-ocr-correction-workbench-warning",
+        "title": "音声・動画・OCR修正ワークベンチ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/warning.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "media-ocr-correction-workbench-happy",
+        "title": "音声・動画・OCR修正ワークベンチ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/happy.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha",
+        "confidenceNote": "音声・動画・OCR修正ワークベンチ の確認観点"
+      },
+      {
+        "id": "media-ocr-correction-workbench-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/missing.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha",
+        "confidenceNote": "音声・動画・OCR修正ワークベンチ の確認観点"
+      },
+      {
+        "id": "media-ocr-correction-workbench-warning",
+        "title": "音声・動画・OCR修正ワークベンチ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "mediaPath": "samples/warning.mp4",
+        "ocrText": "sample OCR text",
+        "correctedText": "corrected sample text",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]

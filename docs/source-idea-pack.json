@@ -1,0 +1,66 @@
+{
+  "rank": 71,
+  "domain": "WebApp",
+  "ideaNo": 5,
+  "ideaName": "音声・動画・OCR修正ワークベンチ",
+  "repository": "media-ocr-correction-workbench",
+  "publish": "GitHub Pages / GitHub Release",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/WebApp/created_idea_005_media-ocr-correction-workbench",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/WebApp/created_idea_005_media-ocr-correction-workbench/idea_005_media-ocr-correction-workbench.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "WebApp",
+    "no": 5,
+    "platform": "WebApp",
+    "field": "音声・動画",
+    "integration": "",
+    "idea": "音声・動画・OCR修正ワークベンチ",
+    "overview": "波形メモ、動画テロップOCR、字幕修正を再生確認しながら行う。 入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+    "problem": "OCRや音声メモの修正結果が素材と分かれやすい。",
+    "similar": "Notion, Airtable, Trello, Google Sheets, Home Assistant, WordPress, Netlify CMS",
+    "diff": "タイムライン、元メディア、修正文を横並びにする。",
+    "parent": "Apps",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "media-ocr-correction-workbench",
+    "repositoryTitle": "media-ocr-correction-workbench",
+    "zipFile": "idea_005_media-ocr-correction-workbench.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}
