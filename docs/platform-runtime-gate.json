@@ -1,0 +1,13 @@
+{
+  "product": "media-ocr-correction-workbench",
+  "title": "音声・動画・OCR修正ワークベンチ",
+  "domain": "WebApp",
+  "ideaNo": 5,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
